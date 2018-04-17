@@ -1,7 +1,7 @@
 # 1 说明
 
 本文档介绍**Spark的二次排序解决方案**。
-参考<https://blog.csdn.net/answer100answer/article/details/79932679>
+详解文档<https://blog.csdn.net/answer100answer/article/details/79932679>
 
 ## 1.1 Chapter 01: Secondary Sorting With Spark
 
