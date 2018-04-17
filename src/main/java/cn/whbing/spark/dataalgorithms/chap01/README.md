@@ -44,6 +44,7 @@ spark version 2.1.2-SNAPSHOT
 Java 1.8.0_131
 ```
 项目详细实现见如下过程，项目结构如下
+
 ![chap01](./chap01.png)
 
 添加两个依赖，其中`spark-core_2.11`，是必须的；`guava`仅仅是为了将Iterable转化为List。
