@@ -1,6 +1,7 @@
 # 1 说明
 
 本文档介绍**Spark的二次排序解决方案**。
+参考[](https://blog.csdn.net/answer100answer/article/details/79932679)
 
 ## 1.1 Chapter 01: Secondary Sorting With Spark
 
@@ -63,16 +64,6 @@ Java 1.8.0_131
 </dependency>
 ```
 
-```flow 
-io=>inputoutput: 输入文件timeseries.txt
-op1=>operation: SparkConf及SparkContext
-op2=>operation: ① textFile将每一行读取成->JavaRDD，即lines
-op3=>operation: ② mapToPair(new PairFunction<T,K,V>) -> JavaPairRDD
-op4=>operation: ③ groupByKey -> JavaPairRDD，即groups
-op5=>operation: ④ mapValues->对groups中的Iterable类型的Vaule排序
-
-io->op1->op2->op3->op4->op5
-```
 
 ## 小结
 
