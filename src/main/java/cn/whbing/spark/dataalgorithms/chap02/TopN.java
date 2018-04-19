@@ -1,4 +1,4 @@
-package cn.whbing.spark.dataalgorithms.chap01;
+package cn.whbing.spark.dataalgorithms.chap02;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,12 +11,12 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.PairFunction;
 
-
 import com.google.common.collect.Lists;
+
 import cn.whbing.spark.dataalgorithms.chap01.util.TupleComparator;
 import scala.Tuple2;
 
-public class SecondarySort {
+public class TopN {
 
 	public static void main(String[] args) {
 		//读取参数并验证
@@ -35,7 +35,7 @@ public class SecondarySort {
 		//final JavaSparkContext sc = new JavaSparkContext();
 		
 		//读取每一行即<name><,><time><,><value>
-		//JavaRDD<String> lines = sc.textFile("./chap01-timeseries.txt");
+		//JavaRDD<String> lines = sc.textFile("timeseries.txt");
 		JavaRDD<String> lines = sc.textFile(inputPath);
 		
 		//将每一行的JavaRDD<String>包括<name><,><time><,><value>进行进一步的处理
